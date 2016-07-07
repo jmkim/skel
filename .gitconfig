@@ -1,0 +1,7 @@
+[user]
+    name = Jongmin Kim
+    email = jmkim@hoodyprogrammer.com
+[core]
+    editor = vim
+[merge]
+    tool = vimdiff
