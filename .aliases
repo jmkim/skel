@@ -34,7 +34,7 @@ alias arm='sudo -u debian-tor arm'
 alias cmakedebug='cmake -DCMAKE_BUILD_TYPE=debug'
 
 # zsh aliases
-alias -='cd -'
+alias -- -='cd -'
 alias ...='../..'
 alias ....='../../..'
 alias .....='../../../..'
