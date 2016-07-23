@@ -34,7 +34,7 @@ alias arm='sudo -u debian-tor arm'
 alias cmakedebug='cmake -DCMAKE_BUILD_TYPE=debug'
 
 # steam aliases
-alias steam='LD_PRELOAD="/usr/$LIB/libstdc++.so.6" DISPLAY=:0 steam'
+alias steam='LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6" DISPLAY=:0 steam'
 
 # zsh aliases
 alias -- -='cd -'
