@@ -2,10 +2,6 @@
 # ENVIRONMENTAL VARIABLES
 #
 
-# Path
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-export MANPATH="/usr/local/man:$MANPATH"
-
 # Language environment
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
@@ -18,6 +14,13 @@ export EDITOR="vim"
 
 # SSH
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# JAVA_HOME
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+# Path
+export PATH="/usr/local/android-studio/bin:$JAVA_HOME/bin:$PATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 
 #
