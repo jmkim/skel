@@ -1,3 +1,6 @@
+" File encodings
+set fencs=ucs-bom,utf-8,cp949
+
 " Show line number
 set number
 
@@ -38,8 +41,8 @@ map <C-D> :echo strftime("%a, %d %b %Y %H:%M:%S %Z")<CR>
 map <C-P> :set nopaste<CR>
 map <C-P>p :set paste<CR>
 
-map <C-U>u :set encoding=utf-8<CR>
-map <C-U>e :set encoding=euc-kr<CR>
+map <C-U>u :set ++enc=utf-8<CR>
+map <C-U>e :set ++enc=euc-kr<CR>
 map <C-U><C-U>u :set fileencoding=utf-8
 map <C-U><C-U>e :set fileencoding=euc-kr
 
