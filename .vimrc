@@ -41,8 +41,8 @@ map <C-D> :echo strftime("%a, %d %b %Y %H:%M:%S %Z")<CR>
 map <C-P> :set nopaste<CR>
 map <C-P>p :set paste<CR>
 
-map <C-U>u :set ++enc=utf-8<CR>
-map <C-U>e :set ++enc=euc-kr<CR>
+map <C-U>u :e ++enc=utf-8<CR>
+map <C-U>e :e ++enc=euc-kr<CR>
 map <C-U><C-U>u :set fileencoding=utf-8
 map <C-U><C-U>e :set fileencoding=euc-kr
 
