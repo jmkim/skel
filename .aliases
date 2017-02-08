@@ -18,7 +18,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # JAVA_HOME
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export NODE_HOME="/usr/local/node"
-export HADOOP_HOME="/usr/local/node"
+export HADOOP_HOME="/usr/local/hadoop"
 
 # Path
 export PATH="/usr/local/android-studio/bin:$JAVA_HOME/bin:$NODE_HOME/bin:$HADOOP_HOME/bin:$PATH"
