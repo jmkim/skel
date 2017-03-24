@@ -9,6 +9,11 @@ export LANGUAGE="en_US.UTF-8"
 
 export EDITOR="vim"
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
 # Compilation flags
 #export ARCHFLAGS="-arch x86_64"
 
