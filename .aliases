@@ -24,6 +24,10 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Path
 export MANPATH="/usr/local/man:$MANPATH"
 
+# Debian Packaging Information
+export DEBEMAIL=jmkim@pukyong.ac.kr
+export DEBFULLNAME='Jongmin Kim'
+
 #
 # ALIASES
 #
