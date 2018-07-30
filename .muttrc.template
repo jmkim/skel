@@ -12,4 +12,5 @@ set smtp_url = "smtp://jmkim@pukyong.ac.kr@smtp.gmail.com:587/"
 set smtp_pass = ""
 set move = no 
 set imap_keepalive = 900
+set signature = ~/.signature
 my_hdr Bcc: Jongmin Kim <jmkim@pukyong.ac.kr>
