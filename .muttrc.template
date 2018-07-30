@@ -13,4 +13,9 @@ set smtp_pass = ""
 set move = no 
 set imap_keepalive = 900
 set signature = ~/.signature
+set pgp_use_gpg_agent = yes
+set pgp_sign_as = D39D8D29BAF36DF8
+set pgp_timeout = 60
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
 my_hdr Bcc: Jongmin Kim <jmkim@pukyong.ac.kr>
