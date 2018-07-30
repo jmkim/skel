@@ -1,0 +1,15 @@
+set from = "jmkim@pukyong.ac.kr"
+set realname = "Jongmin Kim"
+set imap_user = "kdzlvaids@gmail.com"
+set imap_pass = ""
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed ="+[Gmail]/Drafts"
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+set smtp_url = "smtp://jmkim@pukyong.ac.kr@smtp.gmail.com:587/"
+set smtp_pass = ""
+set move = no 
+set imap_keepalive = 900
+my_hdr Bcc: Jongmin Kim <jmkim@pukyong.ac.kr>
