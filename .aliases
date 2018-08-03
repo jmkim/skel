@@ -45,7 +45,8 @@ alias cmakedebug='cmake -DCMAKE_BUILD_TYPE=debug'
 alias steam='LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6" DISPLAY=:0 steam'
 
 # Battery aliases
-alias batt='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+alias batt='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage'
+alias battall='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 
 # zsh aliases
 alias -- -='cd -'
