@@ -28,6 +28,9 @@ export MANPATH="/usr/local/man:$MANPATH"
 export DEBEMAIL=jmkim@pukyong.ac.kr
 export DEBFULLNAME='Jongmin Kim'
 
+# Debian dquit setup
+alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
+
 #
 # ALIASES
 #
