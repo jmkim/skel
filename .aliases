@@ -23,7 +23,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Path
 export MANPATH="/usr/local/man:$MANPATH"
-export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig"
 
 # Debian Packaging Information
 export DEBEMAIL=jmkim@pukyong.ac.kr
