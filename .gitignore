@@ -1,0 +1,43 @@
+## Exclude patterns
+
+# Exclude explicitly
+/.caffrc
+/.muttrc
+
+# Exclude all
+*
+
+## Include patterns
+
+# git config
+!/.gitconfig
+!/.gitignore
+
+# shell config
+!/.aliases
+!/.bash_logout
+!/.bashrc
+!/.zshrc
+!/.dircolors
+
+# Debian Developer config
+!/.lintianrc
+!/.quiltrc-dpkg
+
+# ssh config
+!/.ssh/authorized_keys
+
+# mail config
+!/.muttrc.template
+!/.signature
+
+# vim config
+!/.vimrc
+!/.vim/colors/**
+!/.vim/syntax/**
+
+# caff config
+!/.caffrc.template
+
+# screen config
+!/.screenrc
