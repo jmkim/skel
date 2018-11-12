@@ -3,6 +3,7 @@
 # Exclude explicitly
 /.caffrc
 /.muttrc
+/.gitcookies
 
 # Exclude all
 *

@@ -8,3 +8,5 @@
     tool = vimdiff
 [commit]
     gpgsign = true
+[http]
+    cookiefile = /home/jmkim/.gitcookies
