@@ -21,6 +21,11 @@
 !/.zshrc
 !/.dircolors
 
+# wayland config
+!/.config/
+!/.config/environment.d/
+!/.config/environment.d/uim.conf
+
 # Debian Developer config
 !/.lintianrc
 !/.quiltrc-dpkg
