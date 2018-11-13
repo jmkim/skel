@@ -26,6 +26,7 @@
 !/.quiltrc-dpkg
 
 # ssh config
+!/.ssh/
 !/.ssh/authorized_keys
 
 # mail config
@@ -34,7 +35,10 @@
 
 # vim config
 !/.vimrc
+!/.vim/
+!/.vim/colors/
 !/.vim/colors/**
+!/.vim/syntax/
 !/.vim/syntax/**
 
 # caff config
