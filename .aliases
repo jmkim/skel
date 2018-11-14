@@ -31,6 +31,9 @@ export DEBFULLNAME='Jongmin Kim'
 # Debian dquit setup
 alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
 
+# GPG_TTY
+export GPG_TTY="$(tty)"
+
 #
 # ALIASES
 #
