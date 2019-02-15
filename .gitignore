@@ -37,6 +37,7 @@
 # ssh config
 !/.ssh/
 !/.ssh/authorized_keys
+!/.ssh/config
 
 # mail config
 !/.muttrc.template
