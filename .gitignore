@@ -34,6 +34,9 @@
 !/.lintianrc
 !/.quiltrc
 !/.quiltrc-dpkg
+!/.pbuilder/
+!/.pbuilder/hooks/
+!/.pbuilder/hooks/D05deps
 
 # ssh config
 !/.ssh/
