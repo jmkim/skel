@@ -26,10 +26,6 @@
 !/.config/environment.d/
 !/.config/environment.d/uim.conf
 
-# gnupg config
-!/.gnupg/
-!/.gnupg/gpg-agent.conf
-
 # Debian Developer config
 !/.lintianrc
 !/.quiltrc
