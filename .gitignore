@@ -42,7 +42,7 @@
 # ssh config
 !/.ssh/
 !/.ssh/authorized_keys
-!/.ssh/config
+!/.ssh/config.template
 
 # mail config
 !/.muttrc.template
