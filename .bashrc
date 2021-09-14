@@ -9,6 +9,9 @@
 if [ -f ~/.commonrc ]; then
     . ~/.commonrc
 fi
+if [ -f ~/.commonrc-local ]; then
+    . ~/.commonrc-local
+fi
 if [ -f ~/.common_aliases ]; then
     . ~/.common_aliases
 fi
@@ -110,9 +113,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # local environmental variables
-if [ -f ~/.commonrc-local ]; then
-    . ~/.commonrc-local
-fi
 if [ -f ~/.bashrc-local ]; then
     . ~/.bashrc-local
 fi
