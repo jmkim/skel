@@ -4,6 +4,10 @@
 /.caffrc
 /.muttrc
 /.gitcookies
+/.commonrc-local
+/.bashrc-local
+/.zshrc-local
+/.vimrc-local
 
 # Exclude all
 *
