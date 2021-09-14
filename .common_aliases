@@ -33,6 +33,8 @@ alias _='sudo'
 alias afind='ack -il'
 alias d='dirs -v | head -10'
 alias ebuild='nocorrect ebuild'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 alias g=git
 alias ga='git add'
 alias gaa='git add --all'

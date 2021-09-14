@@ -38,7 +38,10 @@ bindkey '^[[Z' reverse-menu-complete    # Use Shift + Tab as reverse menu comple
 export DEFAULT_USER="jmkim"             # Remove my name from the shell.
 export KEYTIMEOUT=1                     # Key timeout to 10ms. (Useful with ESC with `bindkey -v`.)
 
-eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
+if command -v dircolors &> /dev/null
+then
+    eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
+fi
 
 # local environmental variables
 if [ -f ~/.zshrc-local ]; then
