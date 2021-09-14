@@ -15,9 +15,10 @@
 !/.gitignore
 
 # shell config
-!/.aliases
-!/.bash_logout
+!/.commonrc
+!/.common_aliases
 !/.bashrc
+!/.bash_logout
 !/.zshrc
 !/.dircolors
 
