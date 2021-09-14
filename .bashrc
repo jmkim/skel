@@ -102,3 +102,8 @@ alias nocorrect=''
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# local environmental variables
+if [ -f ~/.bashrc-local ]; then
+    . ~/.bashrc-local
+fi

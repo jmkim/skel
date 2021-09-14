@@ -23,3 +23,8 @@ export DEFAULT_USER="jmkim"             # Remove my name from the shell.
 export KEYTIMEOUT=1                     # Key timeout to 10ms. (Useful with ESC with `bindkey -v`.)
 
 eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
+
+# local environmental variables
+if [ -f ~/.zshrc-local ]; then
+    . ~/.zshrc-local
+fi
