@@ -28,7 +28,7 @@ export KEYTIMEOUT=1                     # Key timeout to 10ms. (Useful with ESC 
 
 eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
 
-# Alias definitions.
+# Alias definitions
 if [ -f ~/.common_aliases ]; then
     . ~/.common_aliases
 fi
@@ -40,6 +40,6 @@ fi
 if [ -f ~/.zshrc-local ]; then
     . ~/.zshrc-local
 fi
-if [ -f ~/.aliases-local ]; then
-    . ~/.aliases-local
+if [ -f ~/.common_aliases-local ]; then
+    . ~/.common_aliases-local
 fi

@@ -115,6 +115,6 @@ fi
 if [ -f ~/.bashrc-local ]; then
     . ~/.bashrc-local
 fi
-if [ -f ~/.aliases-local ]; then
-    . ~/.aliases-local
+if [ -f ~/.common_aliases-local ]; then
+    . ~/.common_aliases-local
 fi
