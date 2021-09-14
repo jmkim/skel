@@ -24,6 +24,10 @@ export KEYTIMEOUT=1                     # Key timeout to 10ms. (Useful with ESC 
 
 eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
 
+# history length
+HISTSIZE=10000000
+SAVEHIST=10000000
+
 # local environmental variables
 if [ -f ~/.zshrc-local ]; then
     . ~/.zshrc-local
