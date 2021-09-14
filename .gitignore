@@ -44,6 +44,11 @@
 !/.ssh/authorized_keys
 !/.ssh/config.template
 
+# gnupg config
+!/.gnupg/
+!/.gnupg/sshcontrol.template
+!/.gnupg/gpg-agent.conf.template
+
 # mail config
 !/.muttrc.template
 !/.signature
