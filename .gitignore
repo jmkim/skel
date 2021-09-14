@@ -29,7 +29,7 @@
 # wayland config
 !/.config/
 !/.config/environment.d/
-!/.config/environment.d/uim.conf
+!/.config/environment.d/uim.conf.template
 
 # Debian Developer config
 !/.lintianrc
