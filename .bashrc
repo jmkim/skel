@@ -9,6 +9,12 @@
 if [ -f ~/.commonrc ]; then
     . ~/.commonrc
 fi
+if [ -f ~/.common_aliases ]; then
+    . ~/.common_aliases
+fi
+if [ -f ~/.common_aliases-local ]; then
+    . ~/.common_aliases-local
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -91,15 +97,10 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 
-# Alias definitions.
+alias nocorrect=''
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.common_aliases ]; then
-    . ~/.common_aliases
-fi
-alias nocorrect=''
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -114,7 +115,4 @@ if [ -f ~/.commonrc-local ]; then
 fi
 if [ -f ~/.bashrc-local ]; then
     . ~/.bashrc-local
-fi
-if [ -f ~/.common_aliases-local ]; then
-    . ~/.common_aliases-local
 fi

@@ -5,6 +5,12 @@ export ZSH="$HOME/.oh-my-zsh"
 if [ -f ~/.commonrc ]; then
     . ~/.commonrc
 fi
+if [ -f ~/.common_aliases ]; then
+    . ~/.common_aliases
+fi
+if [ -f ~/.common_aliases-local ]; then
+    . ~/.common_aliases-local
+fi
 
 # history length
 HISTSIZE=10000000
@@ -28,18 +34,10 @@ export KEYTIMEOUT=1                     # Key timeout to 10ms. (Useful with ESC 
 
 eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
 
-# Alias definitions
-if [ -f ~/.common_aliases ]; then
-    . ~/.common_aliases
-fi
-
 # local environmental variables
 if [ -f ~/.commonrc-local ]; then
     . ~/.commonrc-local
 fi
 if [ -f ~/.zshrc-local ]; then
     . ~/.zshrc-local
-fi
-if [ -f ~/.common_aliases-local ]; then
-    . ~/.common_aliases-local
 fi
