@@ -6,6 +6,9 @@
 [ -z "$PS1" ] && return
 
 # common environmental variables
+if [ -f ~/.commonrc-local-pre ]; then
+    . ~/.commonrc-local-pre
+fi
 if [ -f ~/.commonrc ]; then
     . ~/.commonrc
 fi

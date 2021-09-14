@@ -2,6 +2,9 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # common environmental variables
+if [ -f ~/.commonrc-local-pre ]; then
+    . ~/.commonrc-local-pre
+fi
 if [ -f ~/.commonrc ]; then
     . ~/.commonrc
 fi
