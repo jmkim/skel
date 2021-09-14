@@ -1,6 +1,15 @@
 # Path of oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 
+# common environmental variables
+if [ -f ~/.commonrc ]; then
+    . ~/.commonrc
+fi
+
+# history length
+HISTSIZE=10000000
+SAVEHIST=10000000
+
 ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 # export UPDATE_ZSH_DAYS=13
@@ -8,11 +17,6 @@ ENABLE_CORRECTION="true"
 
 # Plugins (~/.oh-my-zsh/plugins/*)
 plugins=(git)
-
-# Alias definitions.
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,11 +28,18 @@ export KEYTIMEOUT=1                     # Key timeout to 10ms. (Useful with ESC 
 
 eval "$(dircolors "$HOME/.dircolors")"  # Colour setup for ls.
 
-# history length
-HISTSIZE=10000000
-SAVEHIST=10000000
+# Alias definitions.
+if [ -f ~/.common_aliases ]; then
+    . ~/.common_aliases
+fi
 
 # local environmental variables
+if [ -f ~/.commonrc-local ]; then
+    . ~/.commonrc-local
+fi
 if [ -f ~/.zshrc-local ]; then
     . ~/.zshrc-local
+fi
+if [ -f ~/.aliases-local ]; then
+    . ~/.aliases-local
 fi

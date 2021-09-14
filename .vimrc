@@ -30,11 +30,6 @@ if has("unix") || has("gui_running")
     colorscheme solarized
 endif
 
-if has("win32")
-    " Open markdown files with Chrome
-    autocmd BufEnter *.md exe 'noremap <C-S-B> :!start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "%:p"<CR>'
-endif
-
 map <C-T> :echo strftime("%H:%M:%S %Z")<CR>
 map <C-D> :echo strftime("%a, %d %b %Y %H:%M:%S %Z")<CR>
 
@@ -59,3 +54,9 @@ map <C-E>l :tabprevious<CR>
 
 map <C-E>c :tabclose<CR>
 map <C-E>q :tabclose<CR>
+
+try
+  source ~/.vimrc-local
+catch
+  " Just ignore it
+endtry

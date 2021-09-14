@@ -1,0 +1,28 @@
+# Language environment
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+
+export EDITOR="vim"
+export CVS_RSH="ssh"
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# Debian Packaging Information
+export DEBEMAIL=jmkim@pukyong.ac.kr
+export DEBFULLNAME='Jongmin Kim'
+
+# Debian dquit setup
+alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
+
+# SSH
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+
+# GPG_TTY
+export GPG_TTY="$(tty)"

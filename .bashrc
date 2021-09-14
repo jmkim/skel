@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# common environmental variables
+if [ -f ~/.commonrc ]; then
+    . ~/.commonrc
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -91,8 +96,8 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
+if [ -f ~/.common_aliases ]; then
+    . ~/.common_aliases
 fi
 alias nocorrect=''
 
@@ -104,6 +109,12 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # local environmental variables
+if [ -f ~/.commonrc-local ]; then
+    . ~/.commonrc-local
+fi
 if [ -f ~/.bashrc-local ]; then
     . ~/.bashrc-local
+fi
+if [ -f ~/.aliases-local ]; then
+    . ~/.aliases-local
 fi
