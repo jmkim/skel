@@ -1,3 +1,7 @@
+# git for home vcs aliases
+alias git-home-disable='mv ~/.git ~/.git.disabled'
+alias git-home-enable='mv ~/.git.disabled ~/.git'
+
 # screen aliases
 alias sc='screen -R'
 
