@@ -41,7 +41,7 @@
 
 # ssh config
 !/.ssh/
-!/.ssh/authorized_keys
+!/.ssh/authorized_keys.template
 !/.ssh/config.template
 
 # gnupg config
