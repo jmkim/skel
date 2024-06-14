@@ -15,13 +15,13 @@ $CONFIG{'email'} = 'jmkim@pukyong.ac.kr';
 #   $CONFIG{'keyid'} = [ qw{FEDCBA9876543210} ];
 #  or, if you have more than one key:
 #   $CONFIG{'keyid'} = [ qw{0123456789ABCDEF 89ABCDEF76543210} ];
-$CONFIG{'keyid'} = [ qw{D39D8D29BAF36DF8} ];
+$CONFIG{'keyid'} = [ qw{000001EFCF1A50FA} ];
 
 # Select this/these keys to sign with
-$CONFIG{'local-user'} = [ qw{D39D8D29BAF36DF8} ];
+$CONFIG{'local-user'} = [ qw{000001EFCF1A50FA} ];
 
 # Additionally encrypt messages for these keyids
-$CONFIG{'also-encrypt-to'} = [ qw{D39D8D29BAF36DF8} ];
+$CONFIG{'also-encrypt-to'} = [ qw{000001EFCF1A50FA} ];
 
 $CONFIG{'mailer-send'} = ['smtps', Server => 'smtp.gmail.com', Port => 465, Auth => ['jmkim@pukyong.ac.kr', '']];
 

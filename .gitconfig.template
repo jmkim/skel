@@ -1,7 +1,7 @@
 [user]
     name = Jongmin Kim
     email = jmkim@pukyong.ac.kr
-    signingkey = 012E4A0679E14EFCDAAE9472D39D8D29BAF36DF8
+    signingkey = D3D7A23522B641FB78ACC775000001EFCF1A50FA
 [core]
     editor = vim
 [merge]
