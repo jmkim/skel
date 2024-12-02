@@ -18,6 +18,9 @@ alias steam='LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6" DISPLAY=:0 st
 alias batt='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage'
 alias battall='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 
+# lazygit
+alias lg='lazygit'
+
 # zsh aliases
 alias -- -='cd -'
 alias ...='../..'
