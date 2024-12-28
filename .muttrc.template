@@ -20,4 +20,3 @@ set pgp_sign_as = 000001EFCF1A50FA
 set pgp_timeout = 60
 set crypt_autosign = yes
 set crypt_replyencrypt = yes
-my_hdr Bcc: Jongmin Kim <jmkim@debian.org>
