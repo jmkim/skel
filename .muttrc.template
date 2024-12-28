@@ -1,4 +1,4 @@
-set from = "jmkim@pukyong.ac.kr"
+set from = "jmkim@debian.org"
 set realname = "Jongmin Kim"
 set imap_user = "kdzlvaids@gmail.com"
 set imap_pass = ""
@@ -10,7 +10,7 @@ set record="imaps://imap.gmail.com:993/[Gmail]/Sent Mail"
 set header_cache =~/.mutt/cache/headers
 set message_cachedir =~/.mutt/cache/bodies
 set certificate_file =~/.mutt/certificates
-set smtp_url = "smtp://jmkim@pukyong.ac.kr@smtp.gmail.com:587/"
+set smtp_url = "smtp://jmkim@mail-submit.debian.org:587/"
 set smtp_pass = ""
 set move = no 
 set imap_keepalive = 900
@@ -20,4 +20,4 @@ set pgp_sign_as = 000001EFCF1A50FA
 set pgp_timeout = 60
 set crypt_autosign = yes
 set crypt_replyencrypt = yes
-my_hdr Bcc: Jongmin Kim <jmkim@pukyong.ac.kr>
+my_hdr Bcc: Jongmin Kim <jmkim@debian.org>

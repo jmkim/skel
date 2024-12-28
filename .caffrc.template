@@ -2,7 +2,7 @@
 # This file is in perl(1) format - see caff(1) for details.
 
 $CONFIG{'owner'} = 'Jongmin Kim';
-$CONFIG{'email'} = 'jmkim@pukyong.ac.kr';
+$CONFIG{'email'} = 'jmkim@debian.org';
 #$CONFIG{'reply-to'} = 'foo@bla.org';
 
 # You can get your long keyid from
@@ -23,7 +23,7 @@ $CONFIG{'local-user'} = [ qw{000001EFCF1A50FA} ];
 # Additionally encrypt messages for these keyids
 $CONFIG{'also-encrypt-to'} = [ qw{000001EFCF1A50FA} ];
 
-$CONFIG{'mailer-send'} = ['smtps', Server => 'smtp.gmail.com', Port => 465, Auth => ['jmkim@pukyong.ac.kr', '']];
+$CONFIG{'mailer-send'} = ['smtps', Server => 'mail-submit.debian.org', Port => 587, Auth => ['jmkim@debian.org', '']];
 
 # Mail template to use for the encrypted part
 $CONFIG{'mail-template'} = << 'EOM';

@@ -1,6 +1,6 @@
 [user]
     name = Jongmin Kim
-    email = jmkim@pukyong.ac.kr
+    email = jmkim@debian.org
     signingkey = D3D7A23522B641FB78ACC775000001EFCF1A50FA
 [core]
     editor = vim
