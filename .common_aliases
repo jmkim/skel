@@ -21,6 +21,9 @@ alias battall='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 # lazygit
 alias lg='lazygit'
 
+# mutt
+alias mutf='mutt -R -f'
+
 # zsh aliases
 alias -- -='cd -'
 alias ...='../..'
