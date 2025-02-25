@@ -35,7 +35,6 @@
 !/.gbp.conf
 !/.lintianrc
 !/.devscripts
-!/.quiltrc
 !/.quiltrc-dpkg
 !/.pbuilder/
 !/.pbuilder/hooks/
