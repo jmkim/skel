@@ -4,3 +4,4 @@ display-experimental = yes
 pedantic = yes
 show-overrides = yes
 color = auto
+tag-display-limit = 0

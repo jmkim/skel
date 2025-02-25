@@ -1,3 +1,3 @@
 DEBUILD_DPKG_BUILDPACKAGE_OPTS="-i -I -us -uc"
-DEBUILD_LINTIAN_OPTS="-i -I -E --pedantic --show-overrides"
+DEBUILD_LINTIAN_OPTS="-i -I -E --pedantic --show-overrides --tag-display-limit 0"
 DEBSIGN_KEYID="D3D7A23522B641FB78ACC775000001EFCF1A50FA"
