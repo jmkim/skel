@@ -14,6 +14,9 @@
 
 ## Include patterns
 
+# user configs
+!/.config/
+
 # git config
 !/.gitconfig.template
 !/.gitignore
@@ -27,7 +30,6 @@
 !/.dircolors
 
 # wayland config
-!/.config/
 !/.config/environment.d/
 !/.config/environment.d/uim.conf.template
 
@@ -39,7 +41,8 @@
 !/.pbuilder/
 !/.pbuilder/hooks/
 !/.pbuilder/hooks/D05deps
-!/.sbuildrc.templates
+!/.config/sbuild/
+!/.config/sbuild/config.pl
 
 # ssh config
 !/.ssh/
