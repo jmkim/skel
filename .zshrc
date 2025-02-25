@@ -1,6 +1,3 @@
-autoload -U +X bashcompinit && bashcompinit
-autoload -U +X compinit && compinit
-
 # Path of oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 

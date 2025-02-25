@@ -104,6 +104,12 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# Debian packaging - dquit
+if [ -f /usr/share/bash-completion/completions/quilt ]; then
+  . /usr/share/bash-completion/completions/quilt
+  complete -F _quilt_completion $_quilt_complete_opt dquilt
+fi
+
 # local environmental variables
 if [ -f ~/.bashrc-local ]; then
     . ~/.bashrc-local
