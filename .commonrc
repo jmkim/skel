@@ -11,12 +11,19 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Debian Packaging Information
+# Debian packaging - mc
+if [ -f /usr/lib/mc/mc.sh ]; then
+  . /usr/lib/mc/mc.sh
+fi
+
+# Debian packaging - email
 export DEBEMAIL='jmkim@debian.org'
 export DEBFULLNAME='Jongmin Kim'
 
-# Debian dquit setup
+# Debian packaging - dquit
 alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
+. /usr/share/bash-completion/completions/quilt
+complete -F _quilt_completion $_quilt_complete_opt dquilt
 
 # SSH
 export SSH_KEY_PATH="~/.ssh/id_rsa"

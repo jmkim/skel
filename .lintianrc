@@ -1,5 +1,6 @@
-# Enable info tags by default (--display info)
+info = yes
 display-info = yes
-
-# Enable pedantic tags by default (--pedantic)
+display-experimental = yes
 pedantic = yes
+show-overrides = yes
+color = auto

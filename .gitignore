@@ -32,12 +32,15 @@
 !/.config/environment.d/uim.conf.template
 
 # Debian Developer config
+!/.gbp.conf
 !/.lintianrc
+!/.devscripts
 !/.quiltrc
 !/.quiltrc-dpkg
 !/.pbuilder/
 !/.pbuilder/hooks/
 !/.pbuilder/hooks/D05deps
+!/.sbuildrc.templates
 
 # ssh config
 !/.ssh/
