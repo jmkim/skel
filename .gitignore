@@ -38,6 +38,7 @@
 !/.lintianrc
 !/.devscripts
 !/.quiltrc-dpkg
+!/.pbuilderrc
 !/.pbuilder/
 !/.pbuilder/hooks/
 !/.pbuilder/hooks/D05deps
