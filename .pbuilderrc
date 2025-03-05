@@ -2,3 +2,10 @@ export CCACHE_DIR="/var/cache/pbuilder/ccache"
 export PATH="/usr/lib/ccache:${PATH}"
 EXTRAPACKAGES="ccache"
 BINDMOUNTS="${CCACHE_DIR}"
+
+# the hook dir may already be set/populated!
+HOOKDIR="$HOME/.pbuilder/hooks/"
+if [ -n "$DEPS" ] ; then
+        export DEPSBASE=/var/cache/pbuilder/deps
+        BINDMOUNTS=$DEPSBASE
+fi
