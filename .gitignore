@@ -34,6 +34,7 @@
 !/.config/environment.d/uim.conf.template
 
 # Debian Developer config
+!/.dput.cf
 !/.gbp.conf
 !/.lintianrc
 !/.devscripts
