@@ -9,3 +9,5 @@ if [ -n "$DEPS" ] ; then
         export DEPSBASE=/var/cache/pbuilder/deps
         BINDMOUNTS=$DEPSBASE
 fi
+
+SOURCE_ONLY_CHANGES=yes
