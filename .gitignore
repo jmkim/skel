@@ -73,3 +73,7 @@
 
 # screen config
 !/.screenrc
+
+# solaar (rules for Logi mouse and keyboard)
+!/.config/solaar/
+!/.config/solaar/rules.yaml
