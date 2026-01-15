@@ -1,53 +1,5 @@
 %YAML 1.3
 ---
-- KeyIsDown: Back Button
-- Rule:
-  - Test: lowres_wheel_up
-  - MouseScroll: [-1, 0]
-- Rule:
-  - Test: lowres_wheel_down
-  - MouseScroll: [1, 0]
-...
----
-- KeyIsDown: Forward Button
-- Rule:
-  - Test: lowres_wheel_up
-  - MouseScroll: [0, 8]
-- Rule:
-  - Test: lowres_wheel_down
-  - MouseScroll: [0, -8]
-...
----
-- Rule:
-  - Test: lowres_wheel_up
-  - MouseScroll: [0, 1]
-- Rule:
-  - Test: lowres_wheel_down
-  - MouseScroll: [0, -1]
-...
----
-- Key: [Middle Button, released]
-- Rule:
-  - MouseGesture: []
-  - MouseClick: [middle, 1]
-- Rule:
-  - MouseGesture: Mouse Left
-  - MouseClick: [forward, 1]
-- Rule:
-  - MouseGesture: Mouse Right
-  - MouseClick: [back, 1]
-- Rule:
-  - MouseGesture: Mouse Up
-  - KeyPress:
-    - End
-    - click
-- Rule:
-  - MouseGesture: Mouse Down
-  - KeyPress:
-    - Home
-    - click
-...
----
 - KeyIsDown: DPI Switch
 - Report: 1
 - Rule:
@@ -78,4 +30,25 @@
 - Rule:
   - TestBytes: [2, 4, -32768, -1]
   - MouseScroll: [0, 1]
+...
+---
+- KeyIsDown: Middle Button
+- Report: 1
+- Rule:
+  - TestBytes: [0, 2, 1, 32767]
+  - MouseScroll: [1, 0]
+- Rule:
+  - TestBytes: [0, 2, -32768, -1]
+  - MouseScroll: [-1, 0]
+- Rule:
+  - TestBytes: [2, 4, 1, 32767]
+  - MouseScroll: [0, -1]
+- Rule:
+  - TestBytes: [2, 4, -32768, -1]
+  - MouseScroll: [0, 1]
+...
+---
+- KeyIsDown: Middle Button
+- Report: 0
+- MouseClick: [middle, 1]
 ...
