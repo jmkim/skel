@@ -1,6 +1,11 @@
 # Path of oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 
+# local environmental variables
+if [ -f ~/.zshrc-local-pre ]; then
+    . ~/.zshrc-local-pre
+fi
+
 # common environmental variables
 if [ -f ~/.commonrc-local-pre ]; then
     . ~/.commonrc-local-pre

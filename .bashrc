@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# local environmental variables
+if [ -f ~/.bashrc-local-pre ]; then
+    . ~/.bashrc-local-pre
+fi
+
 # common environmental variables
 if [ -f ~/.commonrc-local-pre ]; then
     . ~/.commonrc-local-pre
