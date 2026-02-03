@@ -24,6 +24,10 @@ alias lg='lazygit'
 # mutt
 alias mutf='mutt -R -f'
 
+# claude
+alias cln='claude --dangerously-skip-permissions'
+alias clc='claude --dangerously-skip-permissions --continue'
+
 # zsh aliases
 alias -- -='cd -'
 alias ...='../..'
