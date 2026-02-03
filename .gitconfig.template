@@ -12,3 +12,16 @@
     gpgsign = true
 [http]
     cookiefile = /home/jmkim/.gitcookies
+[sendemail]
+    smtpEncryption = tls
+    smtpServer = mail-submit.debian.org
+    smtpUser = jmkim
+    smtpPass = 
+    smtpServerPort = 587
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[protocol "file"]
+	allow = always
