@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://www.linux.it/~ema/posts/building-debian-packages-the-right-way/
+# Requires: mmdebstrap, apt-cacher-ng
+
+mkdir -p ~/.cache/sbuild
+
+for arch in amd64 arm64 armhf loong64; do
+    HOME=/tmp mmdebstrap --arch=$arch --include=ca-certificates --variant=buildd unstable \
+        ~/.cache/sbuild/unstable-$arch.tar http://127.0.0.1:3142/debian
+done

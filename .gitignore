@@ -14,6 +14,9 @@
 
 ## Include patterns
 
+# bin files
+!/bin/
+
 # user configs
 !/.config/
 
@@ -54,6 +57,7 @@
 !/.pbuilder/hooks/D05deps
 !/.config/sbuild/
 !/.config/sbuild/config.pl
+!/bin/update-unshare
 
 # ssh config
 !/.ssh/
