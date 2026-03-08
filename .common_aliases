@@ -2,6 +2,10 @@
 alias git-home-disable='mv ~/.git ~/.git.disabled'
 alias git-home-enable='mv ~/.git.disabled ~/.git'
 
+# Debian development aliases
+# silversearch-ag copyright search phrase
+alias ag-copyright="ag -i 'copyright .*'"
+
 # screen aliases
 alias sc='screen -R'
 
