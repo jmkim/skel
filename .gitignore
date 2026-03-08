@@ -17,6 +17,10 @@
 # user configs
 !/.config/
 
+# user systemd configs
+!/.config/systemd/
+!/.config/systemd/user/
+
 # git config
 !/.gitconfig.template
 !/.gitignore
@@ -36,6 +40,7 @@
 # lxc config
 !/.config/lxc/
 !/.config/lxc/default.conf.template
+!/.config/systemd/user/lxc-autostart.service
 
 # Debian Developer config
 !/.dput.cf
