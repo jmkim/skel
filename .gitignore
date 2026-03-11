@@ -19,10 +19,22 @@
 
 # user configs
 !/.config/
+!/.local/
+!/.local/share/
 
 # user systemd configs
 !/.config/systemd/
 !/.config/systemd/user/
+
+# mc configs
+!/.config/mc/
+!/.local/share/mc/
+!/.local/share/mc/skins/
+!/.local/share/mc/skins/solarized-*.ini
+!/.local/share/mc/mcedit/
+!/.local/share/mc/mcedit/Syntax/
+!/.local/share/mc/mcedit/Syntax/dark-*.ini
+!/.local/share/mc/mcedit/Syntax/light-*.ini
 
 # git config
 !/.gitconfig.template
