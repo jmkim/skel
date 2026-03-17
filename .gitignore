@@ -50,7 +50,7 @@
 
 # wayland config
 !/.config/environment.d/
-!/.config/environment.d/uim.conf.template
+!/.config/environment.d/ibus.conf.template
 
 # lxc config
 !/.config/lxc/
