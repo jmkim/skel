@@ -4,7 +4,7 @@
 
 mkdir -p ~/.cache/sbuild
 
-for arch in amd64 arm64 armhf loong64; do
+for arch in amd64 arm64 loong64 i386 armhf; do
     HOME=/tmp mmdebstrap --arch=$arch --include=ca-certificates --variant=buildd unstable \
         ~/.cache/sbuild/unstable-$arch.tar http://127.0.0.1:3142/debian
 done
