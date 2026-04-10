@@ -1,0 +1,16 @@
+defaults
+tls on
+auth on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile ~/.msmtp.log
+
+account debian
+host mail-submit.debian.org
+port 587
+tls_starttls on
+from jmkim@debian.org
+auth on
+user jmkim
+passwordeval gpg --no-tty --quiet --decrypt ~/.msmtp-debian.gpg
+
+account default : debian

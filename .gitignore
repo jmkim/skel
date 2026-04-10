@@ -96,5 +96,8 @@
 # caff config
 !/.caffrc.template
 
+# msmtp config
+!/.msmtprc.template
+
 # screen config
 !/.screenrc
