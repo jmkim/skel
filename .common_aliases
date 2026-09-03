@@ -32,6 +32,11 @@ alias mutf='mutt -R -f'
 alias cln='claude --dangerously-skip-permissions'
 alias clc='claude --dangerously-skip-permissions --continue'
 
+# Gajae code
+alias gln='gjc'
+alias glc='gjc --continue'
+alias glr='gjc --resume'
+
 # zsh aliases
 alias -- -='cd -'
 alias ...='../..'
